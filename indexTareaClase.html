@@ -1,0 +1,60 @@
+<!--
+    CREAR UN FORMULARIO UTILIZANDO LOS SIGUIENTES INPUTS:
+    TEXTO
+    DATE
+    SELECT
+    TEXTAREA
+    RADIO
+    BUTTON
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tarea</title>
+    </head>
+    <body>
+        <form action="/" method="formulario">
+            DNI: 
+            <input type="number" placeholder="Ingrese su DNI..." name="dni"> <br><br>
+            Apellido: 
+            <input type="text" placeholder="Ingrese su Apellido" name="apellido"><br> <br>
+            Nombre: 
+            <input type="text" placeholder="Ingrese su Nombre" name="nombre"><br> <br>
+
+            Seleccione Nivel de estudio: <br>
+            <input type="radio" name="estudio" id="estudio" value="0" checked> Primario <br>
+            <input type="radio" name="estudio" id="estudio" value="1"> Secundario <br>
+            <input type="radio" name="estudio" id="estudio" value="2"> Terciario <br>
+            <input type="radio" name="estudio" id="estudio" value="3"> Universitario. 
+            Título: 
+            <textarea style="resize: none;" name="titulo" id="titulo" cols="60" rows="1" placeholder="titulo..."></textarea>
+            <br>
+            <br>
+            
+            Fecha de nacimiento: 
+            <input type="date" name="fecha-nacimiento" id="fecha-nacimiento" min="2000-03-23" max="2022-03-23">
+            <br>
+            <br>
+            Ingrese su edad:
+            <input type="number" name="celular" id="celular" min="13" max="90">
+            <br>
+            <br>
+            Seleccionar Ciudad de nacimiento: 
+            <select name="ciudad" id="ciudad">
+                <option value="">Seleccione...</option>
+                <option value="1">Córdoba Capital</option>
+                <option value="2">Buenos Aires</option>
+                <option value="3">Rosario</option>
+                <option value="4">Carlos Paz</option>
+            </select>
+            <br>
+            <br> <!--SALTO DE LÍNEA-->
+
+            
+            <button type="submit">Registrarse</button>
+            <button type="reset">Cancelar</button>
+
+
+        </form>
+    </body>
+</html>

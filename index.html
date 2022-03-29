@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Clase 2</title>
+    </head>
+    <body>
+        <form action="/" method="post">
+            Nombre: <br>
+            <input type="text" placeholder="Ingrese Nombre" name="nombre"> <br>
+            Apellido: <br>
+            <input type="text" placeholder="Ingrese Apellido" name="apellido"><br><br>
+            Seleccione Género: <br>
+            <input type="radio" name="genero" id="genero" value="1"> Masculino <br>
+            <input type="radio" name="genero" id="genero" value="2"> Femenino <br>
+            <input type="radio" name="genero" id="genero" value="3" checked>Prefiero no contestar <br>
+            <br>
+            Intereses: <br>
+            <input type="checkbox" name="Intereses" id="Intereses" checked> Deportes <br>
+            <input type="checkbox" name="Intereses" id="Intereses"> Peliculas <br>
+            <input type="checkbox" name="Intereses" id="Intereses">Series<br>
+            <br>
+            <br>
+            Fecha de nacimiento: <br>
+            <input type="date" name="fecha-nacimiento" id="fecha-nacimiento" min="2022-03-23" max="2022-03-25">
+            <br>
+            <br>
+            Seleccionar Provincia: <br>
+            <select name="provincia" id="provincia">
+                <option value="">Seleccione...</option>
+                <option value="1">Córdoba</option>
+                <option value="2">Buenos Aires</option>
+            </select>
+            <br>
+            <br> <!--SALTO DE LÍNEA-->
+            Ingrese su comentario: <br>
+            <textarea style="resize: none;" name="comentario" id="comentario" cols="40" rows="20" placeholder="Ingrese su comentario..."></textarea>
+            <br>
+            <br>
+            Ingrese su número: <br>
+            <input type="number" name="numero" id="numero" min="10" max="100">
+
+            <br>
+            <br>
+            <button type="submit">Registrarse</button>
+            <button type="reset">Reestablecer</button>
+
+
+        </form>
+
+    </body>
+</html>
